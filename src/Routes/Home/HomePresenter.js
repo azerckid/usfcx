@@ -28,10 +28,7 @@ const BackImage = styled.div`
  @media (max-width: 1280px) {
   background-size: cover;
  }
- 
-
 `;
-
 
 const HomePresenter = ({}) => {
   return (
