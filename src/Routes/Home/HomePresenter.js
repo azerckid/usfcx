@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 import earth from "../../assets/img/stockEarth.jpg"
-import earthsun from "../../assets/img/earth.jpg"
 import TeamMember from "Components/TeamMember";
 import Crews from "Components/Crews";
 import Partners from "Components/Partners";
@@ -30,7 +29,7 @@ const BackImage = styled.div`
  }
 `;
 
-const HomePresenter = ({}) => {
+const HomePresenter = () => {
   return (
     <Container>
       <BackImage img={earth} ></BackImage>
@@ -40,7 +39,5 @@ const HomePresenter = ({}) => {
     </Container>
 );
 } 
-  
-
 
 export default HomePresenter;
