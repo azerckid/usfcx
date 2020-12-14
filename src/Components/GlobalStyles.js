@@ -14,7 +14,7 @@ body{
     
     font-family:Arial, Helvetica, sans-serif;
     font-size:14px;
-    background-color: rgb(45, 63, 81);
+    background-color: black;
     color:rgba(40,40,40,1);
     padding-top:50px;
 }

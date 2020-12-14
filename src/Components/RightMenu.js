@@ -35,19 +35,22 @@ const Slink = styled(Link)`
   height: 50px;
 `;
 
-const RightNav = ({ location: { pathname }, open, userObj }) => {
+const RightNav = ({ location: { pathname }, open }) => {
   
   return (
     <List open={open}>  
         <>
           <Item current={pathname === "/"}>
-            <Slink to="/">USFCX</Slink>
+            <Slink to="/">HOME</Slink>
           </Item>
           <Item current={pathname === "/product"}>
             <Slink to="/product">PRODUCT</Slink>
           </Item>
           <Item current={pathname === "/company"}>
             <Slink to="/company">COMPANY</Slink>
+          </Item>
+          <Item current={pathname === "/roadmap"}>
+            <Slink to="/roadmap">ROADMAP</Slink>
           </Item>
           <Item current={pathname === "/detail"}>
             <Slink to="/detail">DETAIL</Slink>
