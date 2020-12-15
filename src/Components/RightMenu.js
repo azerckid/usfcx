@@ -20,7 +20,7 @@ const List = styled.ul`
 `;
 
 const Item = styled.li`
-  width: 100px;
+  width: 120px;
   text-align: center;
   border-bottom: 3px solid
     ${(props) => (props.current ? "#c05c67" : "transparent")};
@@ -43,22 +43,44 @@ const RightNav = ({ location: { pathname }, open }) => {
           <Item current={pathname === "/"}>
             <Slink to="/">HOME</Slink>
           </Item>
-          <Item current={pathname === "/product"}>
-            <Slink to="/product">PRODUCT</Slink>
-          </Item>
           <Item current={pathname === "/company"}>
             <Slink to="/company">COMPANY</Slink>
           </Item>
           <Item current={pathname === "/roadmap"}>
             <Slink to="/roadmap">ROADMAP</Slink>
           </Item>
+          <Item current={pathname === "/product"}>
+            <Slink to="/product">PRESS</Slink>
+          </Item>
+          <Item current={pathname === "/team"}>
+            <Slink to="/team">TEAM</Slink>
+          </Item>
+          <Item current={pathname === "/product"}>
+            <Slink to="/product">PARTNERS</Slink>
+          </Item>
+          <Item current={pathname === "/product"}>
+            <Slink to="/product">PROJECTS</Slink>
+          </Item>
+          <Item current={pathname === "/product"}>
+            <Slink to="/product">PROFILE</Slink>
+          </Item>
+          <Item current={pathname === "/product"}>
+            <Slink to="/product">MERGER NEWS</Slink>
+          </Item>
+          <Item current={pathname === "/product"}>
+            <Slink to="/product">CONTACT</Slink>
+          </Item>
+          <Item current={pathname === "/product"}>
+            <Slink to="/product">APPLY FOR M&A</Slink>
+          </Item>
+          {/* <Item current={pathname === "/product"}>
+            <Slink to="/product">PRODUCT</Slink>
+          </Item>
           <Item current={pathname === "/detail"}>
             <Slink to="/detail">DETAIL</Slink>
-          </Item>
-          <Item style={{ color: "#c05c67", fontWeight: 600 }}
-          >
+          </Item> */}
+          <Item style={{ color: "#c05c67", fontWeight: 600 }}>
             <Slink to="/">
-              
             </Slink>
           </Item>
         </>
