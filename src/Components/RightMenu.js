@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { Link, withRouter } from "react-router-dom";
 
-
 const List = styled.ul`
   display: flex;
   @media (max-width: 768px) {
@@ -36,54 +35,35 @@ const Slink = styled(Link)`
 `;
 
 const RightNav = ({ location: { pathname }, open }) => {
-  
   return (
-    <List open={open}>  
-        <>
-          <Item current={pathname === "/"}>
-            <Slink to="/">HOME</Slink>
-          </Item>
-          <Item current={pathname === "/company"}>
-            <Slink to="/company">COMPANY</Slink>
-          </Item>
-          <Item current={pathname === "/roadmap"}>
-            <Slink to="/roadmap">ROADMAP</Slink>
-          </Item>
-          <Item current={pathname === "/product"}>
-            <Slink to="/product">PRESS</Slink>
-          </Item>
-          <Item current={pathname === "/team"}>
-            <Slink to="/team">TEAM</Slink>
-          </Item>
-          <Item current={pathname === "/product"}>
-            <Slink to="/product">PARTNERS</Slink>
-          </Item>
-          <Item current={pathname === "/product"}>
-            <Slink to="/product">PROJECTS</Slink>
-          </Item>
-          <Item current={pathname === "/product"}>
-            <Slink to="/product">PROFILE</Slink>
-          </Item>
-          <Item current={pathname === "/product"}>
-            <Slink to="/product">MERGER NEWS</Slink>
-          </Item>
-          <Item current={pathname === "/product"}>
-            <Slink to="/product">CONTACT</Slink>
-          </Item>
-          <Item current={pathname === "/product"}>
-            <Slink to="/product">APPLY FOR M&A</Slink>
-          </Item>
-          {/* <Item current={pathname === "/product"}>
+    <List open={open}>
+      <>
+        <Item current={pathname === "/"}>
+          <Slink to="/">HOME</Slink>
+        </Item>
+        <Item current={pathname === "/company"}>
+          <Slink to="/company">COMPANY</Slink>
+        </Item>
+        <Item current={pathname === "/roadmap"}>
+          <Slink to="/roadmap">ROADMAP</Slink>
+        </Item>
+        <Item current={pathname === "/product"}>
+          <Slink to="/product">PRESS</Slink>
+        </Item>
+        <Item current={pathname === "/team"}>
+          <Slink to="/team">TEAM</Slink>
+        </Item>
+
+        {/* <Item current={pathname === "/product"}>
             <Slink to="/product">PRODUCT</Slink>
           </Item>
           <Item current={pathname === "/detail"}>
             <Slink to="/detail">DETAIL</Slink>
           </Item> */}
-          <Item style={{ color: "#c05c67", fontWeight: 600 }}>
-            <Slink to="/">
-            </Slink>
-          </Item>
-        </>
+        <Item style={{ color: "#c05c67", fontWeight: 600 }}>
+          <Slink to="/"></Slink>
+        </Item>
+      </>
     </List>
   );
 };

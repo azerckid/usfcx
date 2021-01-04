@@ -1,18 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-
-import TeamMember from "Components/TeamMember";
-import Crews from "Components/Crews";
-import Partners from "Components/Partners";
 import { Link } from "react-router-dom";
 
 import shakeHands from "../../assets/img/shakeHands.jpg";
-import WhyUsfcx from "Components/WhyUsfcx";
-import PressRelease from "Components/PressRelease";
-import WhatIs from "Components/articles/WhatIs";
-import RoadMap from "Components/RoadMap";
-import Vision from "Components/articles/Vision";
 import OmgWorldUsa from "Components/articles/OmgWorldUsa";
+import WhatIs from "Components/articles/WhatIs";
+import Vision from "Components/articles/Vision";
+import OverseasBranches from "Components/articles/OverseasBranches";
+import Footer from "Components/Footer";
 
 const Container = styled.div`
   width: 100vw;
@@ -23,20 +18,6 @@ const Container = styled.div`
   justify-content: flex-start;
   align-items: center;
 `;
-
-// const BackImage = styled.div`
-//   background-image: url(${(props) => props.img});
-//   background-size: cover;
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   width: 1260px;
-//   height: 690px;
-//   margin: -5px;
-
-//   @media (max-width: 1280px) {
-//     background-size: cover;
-//   }
-// `;
 
 const LoginButton = styled.div`
   position: fixed;
@@ -58,12 +39,8 @@ const HomePresenter = () => {
       <OmgWorldUsa></OmgWorldUsa>
       <WhatIs></WhatIs>
       <Vision></Vision>
-      <WhyUsfcx styled={{ id: "whyUsfcx" }}></WhyUsfcx>
-      <RoadMap></RoadMap>
-      <PressRelease></PressRelease>
-      <TeamMember></TeamMember>
-      <Crews></Crews>
-      <Partners></Partners>
+      <OverseasBranches></OverseasBranches>
+      <Footer></Footer>
       <Link href="#">
         <LoginButton img={shakeHands}></LoginButton>
       </Link>
