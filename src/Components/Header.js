@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Burger from "./Buger";
+import UsfcsNaviLogo from "../assets/img/usfcxNaviLogo.png";
 
 const Header = styled.header`
   position: fixed;
@@ -12,7 +13,7 @@ const Header = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 0px 10px;
-  background-color: rgb(35, 49, 64);
+  background-color: #e8e8e8;
   color: #e8f4ff;
   z-index: 10;
   /* box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.8); */
@@ -22,10 +23,10 @@ const LogoContainer = styled.div`
   justify-content: flex-start;
 `;
 const Logo = styled.div`
-  width: 16px;
-  height: 16px;
-  margin-left: 10px;
-  margin-top: 1px;
+  width: 120px;
+  height: 120px;
+  margin-left: 30px;
+  margin-top: 0px;
   background-image: url(${(props) => props.img});
   background-size: contain;
   background-repeat: no-repeat;
@@ -44,10 +45,10 @@ const HeaderC = () => {
   return (
     <Header>
       <LogoContainer>
-        <Logo ></Logo>
-        <TextBox>USFCX</TextBox>
+        <Logo img={UsfcsNaviLogo}></Logo>
+        <TextBox></TextBox>
       </LogoContainer>
-      <Burger ></Burger>
+      <Burger></Burger>
       {/* <RightMenu></RightMenu> */}
     </Header>
   );

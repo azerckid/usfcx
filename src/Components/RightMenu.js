@@ -32,6 +32,7 @@ const Slink = styled(Link)`
   justify-content: center;
   align-items: center;
   height: 50px;
+  color: #656565;
 `;
 
 const RightNav = ({ location: { pathname }, open }) => {
